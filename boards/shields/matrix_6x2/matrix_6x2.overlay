@@ -4,11 +4,34 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "matrix_6x2-layouts.dtsi"
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,physical-layout = &default_layout;
+    };
+
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "6x2 Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+
+        // Keys positions (w = width, h = height, x/y = position)
+        keys  //  w    h     x    y   rot rx ry
+            = <&key_physical_attrs 19  19     0    0>   // Row 0, Col 0
+            , <&key_physical_attrs 19  19    24    0>   // Row 0, Col 1
+            , <&key_physical_attrs 19  19     0   24>   // Row 1, Col 0
+            , <&key_physical_attrs 19  19    24   24>   // Row 1, Col 1
+            , <&key_physical_attrs 19  19     0   48>   // Row 2, Col 0
+            , <&key_physical_attrs 19  19    24   48>   // Row 2, Col 1
+            , <&key_physical_attrs 19  19     0   72>   // Row 3, Col 0
+            , <&key_physical_attrs 19  19    24   72>   // Row 3, Col 1
+            , <&key_physical_attrs 19  19     0   96>   // Row 4, Col 0
+            , <&key_physical_attrs 19  19    24   96>   // Row 4, Col 1
+            , <&key_physical_attrs 19  19     0  120>   // Row 5, Col 0
+            , <&key_physical_attrs 19  19    24  120>   // Row 5, Col 1
+            ;
     };
 
     

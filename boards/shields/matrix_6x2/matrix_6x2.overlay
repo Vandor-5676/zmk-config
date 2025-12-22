@@ -13,7 +13,7 @@
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
-        keys = <&key_physical_attrs 19 19 0 0>, <&key_physical_attrs 19 19 24 0>, <&key_physical_attrs 19 19 0 24>, <&key_physical_attrs 19 19 24 24>, <&key_physical_attrs 19 19 0 48>, <&key_physical_attrs 19 19 24 48>, <&key_physical_attrs 19 19 0 72>, <&key_physical_attrs 19 19 24 72>, <&key_physical_attrs 19 19 0 96>, <&key_physical_attrs 19 19 24 96>, <&key_physical_attrs 19 19 0 120>, <&key_physical_attrs 19 19 24 120>;
+        keys = <&key_physical_attrs 19 19 0 0 0 0 0>, <&key_physical_attrs 19 19 24 0 0 0 0>, <&key_physical_attrs 19 19 0 24 0 0 0>, <&key_physical_attrs 19 19 24 24 0 0 0>, <&key_physical_attrs 19 19 0 48 0 0 0>, <&key_physical_attrs 19 19 24 48 0 0 0>, <&key_physical_attrs 19 19 0 72 0 0 0>, <&key_physical_attrs 19 19 24 72 0 0 0>, <&key_physical_attrs 19 19 0 96 0 0 0>, <&key_physical_attrs 19 19 24 96 0 0 0>, <&key_physical_attrs 19 19 0 120 0 0 0>, <&key_physical_attrs 19 19 24 120 0 0 0>;
     };
     
     kscan0: kscan {
@@ -32,3 +32,8 @@
         map = <RC(0,0) RC(0,1) RC(1,0) RC(1,1) RC(2,0) RC(2,1) RC(3,0) RC(3,1) RC(4,0) RC(4,1) RC(5,0) RC(5,1)>;
     };
 };
+```
+
+The key change is adding three `0` parameters to each key definition for rotation (rot), rotation center x (rx), and rotation center y (ry). The format is:
+```
+&key_physical_attrs width height x y rotation rx ry

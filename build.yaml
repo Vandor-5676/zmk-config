@@ -19,7 +19,7 @@
 #
 ---
 board: [ "nice_nano" ]  # Your board
-shield: [ ]             # Empty because your keyboard is a standalone shield type
+shield: [ "matrix_6x2" ]             # Empty because your keyboard is a standalone shield type
 
 include:
   - board: nice_nano

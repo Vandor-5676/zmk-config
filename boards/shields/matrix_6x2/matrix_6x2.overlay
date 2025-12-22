@@ -1,9 +1,5 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
-// instructions.
-
+// matrix_6x2.overlay
 #include <dt-bindings/zmk/matrix_transform.h>
-
 #include <physical_layouts.dtsi>
 
 / {
@@ -17,56 +13,22 @@
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
-        // Keys positions (w = width, h = height, x/y = position)
-        keys  //  w    h     x    y   rot rx ry
-            = <&key_physical_attrs 19  19     0    0>   // Row 0, Col 0
-            , <&key_physical_attrs 19  19    24    0>   // Row 0, Col 1
-            , <&key_physical_attrs 19  19     0   24>   // Row 1, Col 0
-            , <&key_physical_attrs 19  19    24   24>   // Row 1, Col 1
-            , <&key_physical_attrs 19  19     0   48>   // Row 2, Col 0
-            , <&key_physical_attrs 19  19    24   48>   // Row 2, Col 1
-            , <&key_physical_attrs 19  19     0   72>   // Row 3, Col 0
-            , <&key_physical_attrs 19  19    24   72>   // Row 3, Col 1
-            , <&key_physical_attrs 19  19     0   96>   // Row 4, Col 0
-            , <&key_physical_attrs 19  19    24   96>   // Row 4, Col 1
-            , <&key_physical_attrs 19  19     0  120>   // Row 5, Col 0
-            , <&key_physical_attrs 19  19    24  120>   // Row 5, Col 1
-            ;
+        keys = <&key_physical_attrs 19 19 0 0>, <&key_physical_attrs 19 19 24 0>, <&key_physical_attrs 19 19 0 24>, <&key_physical_attrs 19 19 24 24>, <&key_physical_attrs 19 19 0 48>, <&key_physical_attrs 19 19 24 48>, <&key_physical_attrs 19 19 0 72>, <&key_physical_attrs 19 19 24 72>, <&key_physical_attrs 19 19 0 96>, <&key_physical_attrs 19 19 24 96>, <&key_physical_attrs 19 19 0 120>, <&key_physical_attrs 19 19 24 120>;
     };
-
     
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
 
-        row-gpios = <
-            &gpio0 6   GPIO_ACTIVE_HIGH
-            &gpio0 8   GPIO_ACTIVE_HIGH
-            &gpio0 17  GPIO_ACTIVE_HIGH
-            &gpio0 20  GPIO_ACTIVE_HIGH
-            &gpio0 22  GPIO_ACTIVE_HIGH
-            &gpio0 24  GPIO_ACTIVE_HIGH
-        >;
+        row-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>, <&gpio0 8 GPIO_ACTIVE_HIGH>, <&gpio0 17 GPIO_ACTIVE_HIGH>, <&gpio0 20 GPIO_ACTIVE_HIGH>, <&gpio0 22 GPIO_ACTIVE_HIGH>, <&gpio0 24 GPIO_ACTIVE_HIGH>;
 
-        col-gpios = <
-            &gpio0 2   GPIO_ACTIVE_LOW
-            &gpio0 29  GPIO_ACTIVE_LOW
-        >;
+        col-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>, <&gpio0 29 GPIO_ACTIVE_LOW>;
     };
 
     default_transform: default_transform {
-        // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
-        // for how to configure this
         compatible = "zmk,matrix-transform";
         columns = <2>;
         rows = <6>;
-       map = <
-            RC(0,0) RC(0,1)
-            RC(1,0) RC(1,1)
-            RC(2,0) RC(2,1)
-            RC(3,0) RC(3,1)
-            RC(4,0) RC(4,1)
-            RC(5,0) RC(5,1)
-            >;
+        map = <RC(0,0) RC(0,1) RC(1,0) RC(1,1) RC(2,0) RC(2,1) RC(3,0) RC(3,1) RC(4,0) RC(4,1) RC(5,0) RC(5,1)>;
     };
 };

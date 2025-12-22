@@ -8,7 +8,7 @@
         compatible = "zmk,physical-layout";
         display-name = "2x6 Layout";
         transform = <&default_transform>;
-        kscan = <&kscan>;
+        kscan = <&kscan0>;
 
         // Keys positions (w = width, h = height, x/y = position)
         keys  //  w    h     x    y   rot rx ry

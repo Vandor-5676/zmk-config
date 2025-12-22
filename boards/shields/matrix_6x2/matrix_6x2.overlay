@@ -32,8 +32,5 @@
         map = <RC(0,0) RC(0,1) RC(1,0) RC(1,1) RC(2,0) RC(2,1) RC(3,0) RC(3,1) RC(4,0) RC(4,1) RC(5,0) RC(5,1)>;
     };
 };
-```
 
-The key change is adding three `0` parameters to each key definition for rotation (rot), rotation center x (rx), and rotation center y (ry). The format is:
-```
 &key_physical_attrs width height x y rotation rx ry

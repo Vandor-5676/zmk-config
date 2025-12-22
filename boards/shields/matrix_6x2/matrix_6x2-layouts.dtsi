@@ -1,0 +1,29 @@
+// config/physical_layouts/2x6-layout.dtsi
+// 2x6 keyboard physical layout for ZMK Studio
+
+#include <physical_layouts.dtsi>
+
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "2x6 Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan>;
+
+        // Keys positions (w = width, h = height, x/y = position)
+        keys  //  w    h     x    y   rot rx ry
+            = <&key_physical_attrs 19  19     0    0>   // Row 0, Col 0
+            , <&key_physical_attrs 19  19    24    0>   // Row 0, Col 1
+            , <&key_physical_attrs 19  19    48    0>   // Row 0, Col 2
+            , <&key_physical_attrs 19  19    72    0>   // Row 0, Col 3
+            , <&key_physical_attrs 19  19    96    0>   // Row 0, Col 4
+            , <&key_physical_attrs 19  19   120    0>   // Row 0, Col 5
+            , <&key_physical_attrs 19  19     0   24>   // Row 1, Col 0
+            , <&key_physical_attrs 19  19    24   24>   // Row 1, Col 1
+            , <&key_physical_attrs 19  19    48   24>   // Row 1, Col 2
+            , <&key_physical_attrs 19  19    72   24>   // Row 1, Col 3
+            , <&key_physical_attrs 19  19    96   24>   // Row 1, Col 4
+            , <&key_physical_attrs 19  19   120   24>   // Row 1, Col 5
+            ;
+    };
+};

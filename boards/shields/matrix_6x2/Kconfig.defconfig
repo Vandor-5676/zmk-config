@@ -1,0 +1,6 @@
+if SHIELD_MATRIX_6X2
+
+config ZMK_KEYBOARD_NAME
+    default "matrix-6x2"
+
+endif # SHIELD_MATRIX_6X2

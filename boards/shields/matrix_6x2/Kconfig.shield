@@ -1,0 +1,2 @@
+config SHIELD_MATRIX_6X2
+    def_bool $(shields_list_contains,matrix_6x2)

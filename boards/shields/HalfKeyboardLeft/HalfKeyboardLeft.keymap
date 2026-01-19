@@ -13,25 +13,25 @@
     compatible = "zmk,keymap";
 
     default_layer {
-        bindings = <
-            /* Row 0 */
-            &kp ESC   &kp F1    &kp F2    &kp F3    &kp F4    &none     &none     &none
+            bindings = <
+                /* Row 0 */
+                &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
-            /* Row 1 */
-            &kp GRAVE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &none
+                /* Row 1 */
+                &kp GRAVE, &kp N1,    &kp N2,    &kp N3,    &kp N4,    &kp N5, &kp N6, &none,
 
-            /* Row 2 */
-            &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &kp BRIGHTNESS_UP &none
+                /* Row 2 */
+                &kp TAB,   &kp Q,     &kp W,     &kp E,     &kp R,     &kp T,  &kp C_BRIGHTNESS_UP, &none,
 
-            /* Row 3 */
-            &kp CAPS  &kp A     &kp S     &kp D     &kp F     &kp G     &kp C_MUTE &none
+                /* Row 3 */
+                &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, &none,
 
-            /* Row 4 */
-            &kp LSHFT &kp ESC   &kp Z     &kp X     &kp C     &kp V     &kp B     &kp LOCK
+                /* Row 4 */
+                &kp LSHFT, &kp ESC,   &kp Z,     &kp X,     &kp C,     &kp V,  &kp B, &kp CAPS,
 
-            /* Row 5 */
-            &kp LCTRL &kp FN    &kp LGUI  &kp LALT  &kp SPACE &kp FN    &none     &kp RCTRL
-        >;
+                /* Row 5 */
+                &kp LCTRL, &mo 1,     &kp LGUI,  &kp LALT,  &kp SPACE, &mo 1,  &none, &kp RCTRL
+            >;
     };
 };
 };

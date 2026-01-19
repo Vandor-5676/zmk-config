@@ -19,7 +19,7 @@
 #
 ---
 board: [ "nice_nano" ]  # Your board
-shield: [ "id: HalfKeyboardLeft" ]             # Empty because your keyboard is a standalone shield type
+shield: [ "HalfKeyboardLeft" ]             # Empty because your keyboard is a standalone shield type
 
 include:
   - board: nice_nano

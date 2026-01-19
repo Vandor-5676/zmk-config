@@ -24,7 +24,7 @@
                 &kp TAB,   &kp Q,     &kp W,     &kp E,     &kp R,     &kp T,  &kp C_BRIGHTNESS_UP, &trans,
 
                 /* Row 3 */
-                &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, &ntransone,
+                &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, &trans,
 
                 /* Row 4 */
                 &kp LSHFT, &kp ESC,   &kp Z,     &kp X,     &kp C,     &kp V,  &kp B, &kp CAPS,

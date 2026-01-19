@@ -1,0 +1,6 @@
+if SHIELD_HalfKeyboardLeft
+
+config ZMK_KEYBOARD_NAME
+    default "HalfKeyboardLeft"
+
+endif # SHIELD_HalfKeyboardLeft

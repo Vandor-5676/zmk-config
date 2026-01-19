@@ -6,7 +6,7 @@
 / {
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
-        display-name = "6x2 Layout";
+        display-name = "HalfKeyboardLeft Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
 

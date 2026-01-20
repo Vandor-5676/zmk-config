@@ -15,7 +15,7 @@
     default_layer {
             bindings = <
                 /* Row 0 */
-                &kp A,   &kp B,    &kp C,    &kp D,    &kp E,    &none, &none, &none,
+                &kp A,   &kp B,    &kp C,    &kp D,    &kp E,    &NO, &NO, &NO,
 
                 /* Row 1 */
                 &kp GRAVE, &kp N1,    &kp N2,    &kp N3,    &kp N4,    &kp N5, &kp N6, &none,

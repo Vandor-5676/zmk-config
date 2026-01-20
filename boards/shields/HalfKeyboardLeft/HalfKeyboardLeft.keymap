@@ -18,7 +18,7 @@
                 &kp ESC       &none            &none     &kp F1    &kp F2        &kp F3     &kp F4      &none
 
                 /* Row 1 */
-                &kp GRAVE     &none            &kp N1    &kp N2    &kp N3        &kp N4     &kp 5       &kp 6
+                &kp GRAVE     &none            &kp N1    &kp N2    &kp N3        &kp N4     &kp N5       &kp N6
 
                 /* Row 2 */   /* Red */
                 &kp TAB       &kp PIPE         &kp Q     &kp W     &kp E         &kp R      &kp T       &kp K_CALCULATOR

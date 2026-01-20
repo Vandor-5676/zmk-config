@@ -24,7 +24,7 @@
                &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
                 /* Row 3 */
-                &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, &none,
+               &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
                 /* Row 4 */
                 &kp LSHFT, &kp ESC,   &kp Z,     &kp X,     &kp C,     &kp V,  &kp B, &kp CAPS,

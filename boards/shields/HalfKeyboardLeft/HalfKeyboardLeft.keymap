@@ -30,7 +30,7 @@
                &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
                 /* Row 5 */
-                &kp LCTRL, &mo 1,     &kp LGUI,  &kp LALT,  &kp SPACE, &mo 1,  &none, &kp RCTRL
+                &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
             >;
     };
 };

@@ -21,7 +21,7 @@
                 &kp GRAVE, &kp N1,    &kp N2,    &kp N3,    &kp N4,    &kp N5, &kp N6, & NO,
 
                 /* Row 2 */
-                &kp TAB,   &kp Q,     &kp W,     &kp E,     &kp R,     &kp T,  &kp A, & NO,
+                &kp A,   &kp Q,     &kp W,     &kp E,     &kp R,     &kp T,  &kp A, & NO,
 
                 /* Row 3 */
                 &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, & NO,

@@ -21,7 +21,7 @@
                 &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
                 /* Row 2 */
-                &kp TAB,   &kp Q,     &kp W,     &kp E,     &kp R,     &kp T,  &kp C_VOLUME_UP, &none,
+               &kp ESC,   &kp F1,    &kp F2,    &kp F3,    &kp F4,    &none, &none, &none,
 
                 /* Row 3 */
                 &kp CAPS,  &kp A,     &kp S,     &kp D,     &kp F,     &kp G,  &kp C_MUTE, &none,

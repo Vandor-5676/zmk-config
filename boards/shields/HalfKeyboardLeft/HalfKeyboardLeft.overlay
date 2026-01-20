@@ -39,15 +39,15 @@
             , <&gpio0 22 GPIO_ACTIVE_HIGH>
             ;
         col-gpios
-            = <&gpio0  106 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>            
-            , <&gpio0   31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0    2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0  115 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0  113 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>                            
+            = <&gpio0  104 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    
             , <&gpio0  111 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0  104 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    
-            ;
+            , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>                            
+            , <&gpio0  113 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0  115 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0    2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0   31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0  106 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>    
+            ;            
     };
 
     default_transform: default_transform {

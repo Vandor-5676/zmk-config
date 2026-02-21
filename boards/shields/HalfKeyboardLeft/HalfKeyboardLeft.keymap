@@ -7,6 +7,21 @@
 
 
 / {
+    behaviors {
+        studio_unlock: studio_unlock {
+            compatible = "zmk,behavior-studio-unlock";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_studio {
+            timeout-ms = <50>;
+            key-positions = <0 16>;   /* ESC (row0,col0) + TAB (row2,col0) */
+            bindings = <&studio_unlock>;
+        };
+    };
+
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
